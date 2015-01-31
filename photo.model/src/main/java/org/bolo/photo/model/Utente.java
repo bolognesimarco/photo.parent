@@ -1,5 +1,6 @@
 package org.bolo.photo.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -8,6 +9,7 @@ import javax.persistence.ManyToOne;
 
 @Entity
 public class Utente {
+	
 	@Id
 	@GeneratedValue
 	private int id;
@@ -15,6 +17,10 @@ public class Utente {
 	@ManyToOne(optional=false)
 	@JoinColumn(name="tipoUtente", nullable=false, updatable=true)
 	private TipoUtente tipoUtente;
+	
+	@Column
+	private String nome;
+	
 
 	public int getId() {
 		return id;
@@ -31,6 +37,9 @@ public class Utente {
 	public void setTipoUtente(TipoUtente tipoUtente) {
 		this.tipoUtente = tipoUtente;
 	}
+	
+	
+	
 	
 	
 }

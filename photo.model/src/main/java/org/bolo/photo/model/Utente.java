@@ -21,6 +21,11 @@ public class Utente {
 	@Column
 	private String nome;
 	
+	
+	@ManyToOne(optional=false)
+	@JoinColumn(name="luogo", nullable=false, updatable=true)
+	private Luogo luogo;
+	
 
 	public int getId() {
 		return id;

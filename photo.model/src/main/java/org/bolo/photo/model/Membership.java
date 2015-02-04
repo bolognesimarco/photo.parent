@@ -21,10 +21,10 @@ public class Membership {
 	private Date dataFine;
 	
 	@ManyToOne(optional=false)
-	@JoinColumn(name="TipoMembershipId", nullable=false, updatable=false)
-	private TipoMembership tipo;
+	@JoinColumn(name="tipoMembership", nullable=false, updatable=false)
+	private TipoMembership tipoMembership;
 	
 	@ManyToOne(optional=false)
-	@JoinColumn(name="UtenteId", nullable=false, updatable=false)
+	@JoinColumn(name="utente", nullable=false, updatable=false)
 	private Utente utente;
 }

@@ -19,10 +19,10 @@ public class Feedback {
 	private String messaggio;
 	
 	@ManyToOne
-    @JoinColumn(name="RilasciatoDaId", nullable=false)
+    @JoinColumn(name="rilasciatoDa", nullable=false)
 	private Utente rilasciatoDa;
 	
 	@ManyToOne
-    @JoinColumn(name="RilasciatoAId", nullable=false)
-	private Utente rilasciatoA;
+    @JoinColumn(name="ricevutoDa", nullable=false)
+	private Utente ricevutoDa;
 }

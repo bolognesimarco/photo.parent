@@ -27,6 +27,9 @@ public class Utente {
 	@Column
 	private Date dataMember;
 	
+	@Column
+	private String password;
+	
 	@OneToMany
 	@JoinColumn(name="UtenteId")
 	private List<Utente> collaboratori;
@@ -39,5 +42,7 @@ public class Utente {
 	
 	@OneToMany(cascade=CascadeType.ALL, mappedBy="ricevutoDa")
 	private List<Feedback> feedbackRicevuti;
+	
+
 	
 }

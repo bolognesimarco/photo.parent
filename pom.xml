@@ -8,6 +8,7 @@
 	<modules>
 		<module>photo.model</module>
 		<module>photo.service</module>
+		<module>photo.model.web</module>
 	</modules>
 
 	
@@ -17,6 +18,11 @@
 			<dependency>
 				<groupId>org.bolo</groupId>
 				<artifactId>photo.model</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bolo</groupId>
+				<artifactId>photo.service</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 		</dependencies>

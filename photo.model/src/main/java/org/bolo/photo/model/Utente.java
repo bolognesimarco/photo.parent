@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 
 @Entity
@@ -43,6 +44,19 @@ public class Utente {
 	@OneToMany(cascade=CascadeType.ALL, mappedBy="ricevutoDa")
 	private List<Feedback> feedbackRicevuti;
 	
-
+	@OneToMany(cascade=CascadeType.ALL, mappedBy="soggetto")
+	private List<Foto> soggettoDi;
+	
+	@OneToMany(cascade=CascadeType.ALL, mappedBy="fotografo")
+	private List<Foto> fotografoDi;
+	
+	@OneToMany(cascade=CascadeType.ALL, mappedBy="pubblicatore")
+	private List<Foto> pubblicate;
+	
+	@ManyToMany(mappedBy="visualizzatori")
+	private List<Foto> visualizzate;
+	
+	@OneToMany(cascade=CascadeType.ALL, mappedBy="rilasciatoDa")
+	private List<Voto> voti;
 	
 }

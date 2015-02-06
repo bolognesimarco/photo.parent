@@ -25,5 +25,13 @@ public class Messaggio {
 	@ManyToOne(optional=false)
 	@JoinColumn(name="messaggio", nullable=false, updatable=false)
 	private Thread thread;
+	
+	@ManyToOne(optional=false)
+	@JoinColumn(name="mittente", nullable=false, updatable=false)
+	private Utente mittente;
+	
+	@ManyToOne(optional=false)
+	@JoinColumn(name="destinatario", nullable=false, updatable=false)
+	private Utente destinatario;
 
 }

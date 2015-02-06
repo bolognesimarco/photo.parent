@@ -20,4 +20,28 @@ public class Tag {
 	
 	@ManyToMany(mappedBy="tags")
 	private List<Foto> foto;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getDescrizione() {
+		return descrizione;
+	}
+
+	public void setDescrizione(String descrizione) {
+		this.descrizione = descrizione;
+	}
+
+	public List<Foto> getFoto() {
+		return foto;
+	}
+
+	public void setFoto(List<Foto> foto) {
+		this.foto = foto;
+	}
 }

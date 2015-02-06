@@ -23,7 +23,7 @@ public class Messaggio {
 	private Date data;
 	
 	@ManyToOne(optional=false)
-	@JoinColumn(name="messaggio", nullable=false, updatable=false)
+	@JoinColumn(name="thread", nullable=false, updatable=false)
 	private Thread thread;
 	
 	@ManyToOne(optional=false)
@@ -33,5 +33,53 @@ public class Messaggio {
 	@ManyToOne(optional=false)
 	@JoinColumn(name="destinatario", nullable=false, updatable=false)
 	private Utente destinatario;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getMessaggio() {
+		return messaggio;
+	}
+
+	public void setMessaggio(String messaggio) {
+		this.messaggio = messaggio;
+	}
+
+	public Date getData() {
+		return data;
+	}
+
+	public void setData(Date data) {
+		this.data = data;
+	}
+
+	public Thread getThread() {
+		return thread;
+	}
+
+	public void setThread(Thread thread) {
+		this.thread = thread;
+	}
+
+	public Utente getMittente() {
+		return mittente;
+	}
+
+	public void setMittente(Utente mittente) {
+		this.mittente = mittente;
+	}
+
+	public Utente getDestinatario() {
+		return destinatario;
+	}
+
+	public void setDestinatario(Utente destinatario) {
+		this.destinatario = destinatario;
+	}
 
 }

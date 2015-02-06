@@ -27,4 +27,44 @@ public class Membership {
 	@ManyToOne(optional=false)
 	@JoinColumn(name="utente", nullable=false, updatable=false)
 	private Utente utente;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public Date getDataInizio() {
+		return dataInizio;
+	}
+
+	public void setDataInizio(Date dataInizio) {
+		this.dataInizio = dataInizio;
+	}
+
+	public Date getDataFine() {
+		return dataFine;
+	}
+
+	public void setDataFine(Date dataFine) {
+		this.dataFine = dataFine;
+	}
+
+	public TipoMembership getTipoMembership() {
+		return tipoMembership;
+	}
+
+	public void setTipoMembership(TipoMembership tipoMembership) {
+		this.tipoMembership = tipoMembership;
+	}
+
+	public Utente getUtente() {
+		return utente;
+	}
+
+	public void setUtente(Utente utente) {
+		this.utente = utente;
+	}
 }

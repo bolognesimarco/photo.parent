@@ -23,5 +23,29 @@ public class Annuncio {
 	
 	@OneToMany(cascade=CascadeType.ALL, mappedBy="annuncio")
 	private List<Thread> risposte;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public Utente getProponente() {
+		return proponente;
+	}
+
+	public void setProponente(Utente proponente) {
+		this.proponente = proponente;
+	}
+
+	public List<Thread> getRisposte() {
+		return risposte;
+	}
+
+	public void setRisposte(List<Thread> risposte) {
+		this.risposte = risposte;
+	}
 	
 }

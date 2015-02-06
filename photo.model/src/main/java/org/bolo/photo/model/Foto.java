@@ -46,6 +46,78 @@ public class Foto {
 	@ManyToMany
 	@JoinTable(name="Foto_Tags")
 	private List<Tag> tags;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getTitolo() {
+		return titolo;
+	}
+
+	public void setTitolo(String titolo) {
+		this.titolo = titolo;
+	}
+
+	public boolean isVietataMinori() {
+		return vietataMinori;
+	}
+
+	public void setVietataMinori(boolean vietataMinori) {
+		this.vietataMinori = vietataMinori;
+	}
+
+	public Utente getSoggetto() {
+		return soggetto;
+	}
+
+	public void setSoggetto(Utente soggetto) {
+		this.soggetto = soggetto;
+	}
+
+	public Utente getFotografo() {
+		return fotografo;
+	}
+
+	public void setFotografo(Utente fotografo) {
+		this.fotografo = fotografo;
+	}
+
+	public Utente getPubblicatore() {
+		return pubblicatore;
+	}
+
+	public void setPubblicatore(Utente pubblicatore) {
+		this.pubblicatore = pubblicatore;
+	}
+
+	public List<Utente> getVisualizzatori() {
+		return visualizzatori;
+	}
+
+	public void setVisualizzatori(List<Utente> visualizzatori) {
+		this.visualizzatori = visualizzatori;
+	}
+
+	public List<Voto> getVoti() {
+		return voti;
+	}
+
+	public void setVoti(List<Voto> voti) {
+		this.voti = voti;
+	}
+
+	public List<Tag> getTags() {
+		return tags;
+	}
+
+	public void setTags(List<Tag> tags) {
+		this.tags = tags;
+	}
 	
 	
 }

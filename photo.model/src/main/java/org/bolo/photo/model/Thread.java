@@ -38,4 +38,60 @@ public class Thread {
 	@ManyToOne(optional=false)
 	@JoinColumn(name="destinatarioPrimo", nullable=false, updatable=false)
 	private Utente destinatarioPrimo;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public boolean isCancellatoMittentePrimo() {
+		return cancellatoMittentePrimo;
+	}
+
+	public void setCancellatoMittentePrimo(boolean cancellatoMittentePrimo) {
+		this.cancellatoMittentePrimo = cancellatoMittentePrimo;
+	}
+
+	public boolean isCancellatoDestinatarioPrimo() {
+		return cancellatoDestinatarioPrimo;
+	}
+
+	public void setCancellatoDestinatarioPrimo(boolean cancellatoDestinatarioPrimo) {
+		this.cancellatoDestinatarioPrimo = cancellatoDestinatarioPrimo;
+	}
+
+	public Annuncio getAnnuncio() {
+		return annuncio;
+	}
+
+	public void setAnnuncio(Annuncio annuncio) {
+		this.annuncio = annuncio;
+	}
+
+	public List<Messaggio> getMessaggi() {
+		return messaggi;
+	}
+
+	public void setMessaggi(List<Messaggio> messaggi) {
+		this.messaggi = messaggi;
+	}
+
+	public Utente getMittentePrimo() {
+		return mittentePrimo;
+	}
+
+	public void setMittentePrimo(Utente mittentePrimo) {
+		this.mittentePrimo = mittentePrimo;
+	}
+
+	public Utente getDestinatarioPrimo() {
+		return destinatarioPrimo;
+	}
+
+	public void setDestinatarioPrimo(Utente destinatarioPrimo) {
+		this.destinatarioPrimo = destinatarioPrimo;
+	}
 }

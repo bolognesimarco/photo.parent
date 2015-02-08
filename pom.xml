@@ -11,7 +11,7 @@
 		<module>photo.model.web</module>
 	</modules>
 
-	
+
 
 	<dependencyManagement>
 		<dependencies>
@@ -25,6 +25,8 @@
 				<artifactId>photo.service</artifactId>
 				<version>${project.version}</version>
 			</dependency>
+
+
 		</dependencies>
 	</dependencyManagement>
 </project>

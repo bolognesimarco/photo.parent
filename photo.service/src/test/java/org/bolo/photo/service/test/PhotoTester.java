@@ -10,7 +10,7 @@ public class PhotoTester {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
 		PrimoServizio serv = ctx.getBean(PrimoServizio.class);
 		serv.servizio();
-
+		
 	}
 
 }

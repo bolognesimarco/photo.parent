@@ -28,7 +28,7 @@
 	
 	<!-- SPRING SECURITY -->
 	<security:http>
-		<security:intercept-url pattern="/**" access="ROLE_USER" />
+		<security:intercept-url pattern="/p/**" access="ROLE_USER" />
 		<security:form-login />
 		<security:logout />
 	</security:http>

@@ -9,23 +9,23 @@ html {
 
 body {
 	min-height: 100%;
-	width: 800px;
+	width: 1080px;
 	margin: 20px auto; /* center */
 	padding: 20px;
+	padding-top: 0px;
 	border: 1px solid black;
 	background: #eee;
-	
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	
-	-moz-box-shadow: 0 0 5px 5px #888;
-	-webkit-box-shadow: 0 0 5px 5px #888;
-	box-shadow: 0 0 5px 5px #888;
 }
 
-bigphoto {
-	display: block;
-	background-color: #ddd;
-	padding: 50px;
-	font-size: 30px;
+header h1 {
+	font-size: 38px;
+    padding: 0px;
+    color: green;
+    font-family: cursive;
+}
+
+nav {
+	
 }

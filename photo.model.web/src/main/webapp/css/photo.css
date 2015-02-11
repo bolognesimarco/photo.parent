@@ -2,10 +2,25 @@ header, section, footer, aside, nav, main, article, figure {
 	display: block;
 }
 
-body{
-	margin-left: 250px;
-	margin-right: 250px;
-	background-color: red;
+html {
+	height: 100%;
+	background: #c72;
+}
+
+body {
+	min-height: 100%;
+	width: 800px;
+	margin: 20px auto; /* center */
+	padding: 20px;
+	border: 1px solid black;
+	background: #eee;
+	
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	-moz-box-shadow: 0 0 5px 5px #888;
+	-webkit-box-shadow: 0 0 5px 5px #888;
+	box-shadow: 0 0 5px 5px #888;
 }
 
 bigphoto {

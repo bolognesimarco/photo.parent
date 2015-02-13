@@ -9,23 +9,18 @@ html {
 
 body {
 	min-height: 100%;
-	width: 1080px;
-	margin: 20px auto; /* center */
+}
+
+#maindiv {
+	min-height: 100%;
+	width: 700px;
+	margin: 60px auto; /* center */
 	padding: 20px;
 	padding-top: 0px;
 	border: 1px solid black;
 	background: #eee;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	background: white;
 }
 
-header h1 {
-	font-size: 38px;
-    padding: 0px;
-    color: green;
-    font-family: cursive;
-}
-
-nav {
-	
-}

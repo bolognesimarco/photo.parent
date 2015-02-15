@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+#div1 {
+	padding: 10px;
+	background: lime;
+	margin-bottom: 50px;
+}
+
+#header1 {
+	border: 1px solid black;
+	background: fuchsia;
+}
+
+#section1 {
+	border: 1px solid black;
+	background: red;
+	float: left;
+	width: 20%;
+}
+
+#aside1 {
+	border: 1px solid black;
+	background: green;
+	float: right;
+	width: 40%;
+}
+
+#footer1 {
+	border: 1px solid black;
+	background: aqua;
+}
+
+#div2 {
+	padding: 10px;
+	background: lime;
+	margin-bottom: 50px;
+}
+
+#header2 {
+	border: 1px solid black;
+	background: fuchsia;
+}
+
+#section2 {
+	border: 1px solid black;
+	background: red;
+	float: left;
+	width: 20%;
+}
+
+#aside2 {
+	border: 1px solid black;
+	background: green;
+	float: right;
+	width: 40%;
+}
+
+#footer2 {
+	border: 1px solid black;
+	background: aqua;
+	clear: both;
+}
+
+#div3 {
+	padding: 10px;
+	background: lime;
+	margin-bottom: 50px;
+}
+
+#header3 {
+	border: 1px solid black;
+	background: fuchsia;
+}
+
+.group:before, .group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	clear: both;
+	*zoom: 1;
+}
+
+#section3 {
+	float: left;
+	width: 20%;
+	border: 1px solid black;
+	background: red;
+}
+
+#aside3 {
+	float: right;
+	width: 40%;
+	border: 1px solid black;
+	background: green;
+}
+
+#footer3 {
+	border: 1px solid black;
+	background: aqua;
+	clear: both;
+}
+</style>
+</head>
+<body>
+	<div id="div1">
+		<header id="header1">H</header>
+		<section id="section1">S</section>
+		<aside id="aside1">A</aside>
+		<footer id="footer1">F</footer>
+	</div>
+
+	<div id="div2">
+		<header id="header2">H</header>
+		<section id="section2">S</section>
+		<aside id="aside2">A</aside>
+		<footer id="footer2">F</footer>
+	</div>
+
+	<div id="div3">
+		<header id="header3">H</header>
+		<div class="group">
+			<section id="section3">S</section>
+			<aside id="aside3">A</aside>
+		</div>
+		<footer id="footer3">F</footer>
+	</div>
+
+</body>
+</html>

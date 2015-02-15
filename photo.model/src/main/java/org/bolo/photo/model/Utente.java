@@ -32,6 +32,9 @@ public class Utente {
 	@Column
 	private String password;
 	
+	@Column
+	private Date dataNascita;
+	
 	@ManyToOne
     @JoinColumn(name="tipoUtente", nullable=false)
 	private TipoUtente tipoUtente;
@@ -182,6 +185,14 @@ public class Utente {
 
 	public void setVoti(List<Voto> voti) {
 		this.voti = voti;
+	}
+
+	public Date getDataNascita() {
+		return dataNascita;
+	}
+
+	public void setDataNascita(Date dataNascita) {
+		this.dataNascita = dataNascita;
 	}
 	
 }

@@ -2,16 +2,78 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Photo Model Web</title>
+<title>Photo Model Web o altro titolo...</title>
 <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+
 <link rel="stylesheet" href="css/photo.css">
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/photo.js"></script>
+
 </head>
 <body>
-	<header>TITOLAZZO</header>
-	<div id="maindiv"></div>
+	<header>
+		<h1>Photo Model Web o altro titolo...</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="home">Home</a></li><!-- per togliere lo spazio bianco
+			 --><li><a href="gallerie">Gallerie</a></li><!-- per togliere lo spazio bianco
+			 --><li><a href="utenti">Utenti</a></li><!--  per togliere lo spazio bianco
+			 --><li><a href="lavori">Lavori</a></li><!--  per togliere lo spazio bianco
+			 --><li><a href="forum">Forum</a></li><!--  per togliere lo spazio bianco
+			 --><li><a href="registrati">Registrati</a></li><!--  per togliere lo spazio bianco
+			 --><li><a href="login">Login</a></li>
+		</ul>
+	</nav>
+	<section id="home">
+		<h2>Home</h2>
+	</section>
+	<section id="gallerie">
+		<h2>Gallerie</h2>
+	</section>
+	<section id="utenti">
+		<h2>Utenti</h2>
+	</section>
+	<section id="lavori">
+		<h2>Lavori</h2>
+	</section>
+	<section id="forum">
+		<h2>Forum</h2>
+	</section>
+	<section id="registrati">
+		<h2>Registrati</h2>
+		<form action="/registrati" method="post">
+			<fieldset>
+				<legend>Informazioni necessarie</legend>
+				<label>
+					Username: <input type="text" name="username" required>
+				</label>
+				<label>
+					Password: <input type="password" name="password" required>
+				</label>
+				<label>
+					Confirm: <input type="password" name="confirmpassword" required>
+				</label>
+				<label>
+					Email: <input type="email" name="email" required>
+				</label>
+				<label>
+					Data di nascita: <input type="date" name="dataNascita" required>
+				</label>
+				<label>
+					Tipo utente: <select name="tipoutente" id="tipoutente">
+
+					</select>
+				</label>
+			</fieldset>
+			
+		</form>
+	</section>
+	<footer>
+		Web Site di Fabio Bolognesi S.p.A. <a href="condizioni">Condizioni
+			di utilizzo</a>
+	</footer>
 </body>
 </html>

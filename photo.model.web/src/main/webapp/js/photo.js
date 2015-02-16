@@ -1,19 +1,19 @@
 $(document).ready(function() {
-	
+
 	var sections = $("body section");
 	sections.hide();
 	$("#registrati").show();
+
+	xhr_get("p/getTipiUtente").done(function(data){
+		var select = $("#tipoutente");
+		$.each(data, function(index, value){
+			var option = $(document.createElement('option'));
+			option.attr('name',value.id);
+			option.text(value.descrizione);
+			select.append(option);
+		});		
+	});
 	
-	$.ajax(
-			{
-				url: "/p/getTipiUtente", 
-				success: function(result){
-					
-					
-					
-				}
-			}
-	);
 	
 	$("nav ul li a").click(function(event) {// quando si clicka su un menu item
 		var clicked = $(this).attr("href");
@@ -28,5 +28,19 @@ $(document).ready(function() {
 		});
 		event.preventDefault();
 	});
-	
+
 });
+
+function xhr_get(url) {
+
+	return $.ajax({
+		url : url,
+		type : 'get',
+		dataType : 'json'
+	}).always(function() {
+		alert('always');
+	}).fail(function() {
+		alert('fail');
+	});
+
+}

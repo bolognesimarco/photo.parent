@@ -1,6 +1,9 @@
 package org.bolo.photo.web;
 
+import java.util.Enumeration;
 import java.util.List;
+
+import javax.annotation.PreDestroy;
 
 import org.bolo.photo.model.TipoUtente;
 import org.bolo.photo.service.ParametriService;
@@ -11,28 +14,30 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class TheController {
-	
+
 	@Autowired
 	private ParametriService parametriService;
-	
+
 	@RequestMapping(value = "/test")
 	public @ResponseBody String test() {
 		System.out.println("TEST !!!");
 		return "DONE";
 	}
-	
-	@RequestMapping(value="/primo")
-	public String primo(){
+
+	@RequestMapping(value = "/primo")
+	public String primo() {
 		return "primo";
 	}
-	
-	@RequestMapping(value="/index")
-	public String index(){
+
+	@RequestMapping(value = "/index")
+	public String index() {
 		return "index";
 	}
-	
+
 	@RequestMapping(value = "/getTipiUtente")
 	public @ResponseBody List<TipoUtente> getTipiUtente() throws Exception {
 		return parametriService.listTipiUtente();
 	}
+
+	
 }

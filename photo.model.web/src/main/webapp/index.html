@@ -18,13 +18,25 @@
 	</header>
 	<nav>
 		<ul>
-			<li><a href="home">Home</a></li><!-- per togliere lo spazio bianco
-			 --><li><a href="gallerie">Gallerie</a></li><!-- per togliere lo spazio bianco
-			 --><li><a href="utenti">Utenti</a></li><!--  per togliere lo spazio bianco
-			 --><li><a href="lavori">Lavori</a></li><!--  per togliere lo spazio bianco
-			 --><li><a href="forum">Forum</a></li><!--  per togliere lo spazio bianco
-			 --><li><a href="registrati">Registrati</a></li><!--  per togliere lo spazio bianco
-			 --><li><a href="login">Login</a></li>
+			<li><a href="home">Home</a></li>
+			<!-- per togliere lo spazio bianco
+			 -->
+			<li><a href="gallerie">Gallerie</a></li>
+			<!-- per togliere lo spazio bianco
+			 -->
+			<li><a href="utenti">Utenti</a></li>
+			<!--  per togliere lo spazio bianco
+			 -->
+			<li><a href="lavori">Lavori</a></li>
+			<!--  per togliere lo spazio bianco
+			 -->
+			<li><a href="forum">Forum</a></li>
+			<!--  per togliere lo spazio bianco
+			 -->
+			<li><a href="registrati">Registrati</a></li>
+			<!--  per togliere lo spazio bianco
+			 -->
+			<li><a href="login">Login</a></li>
 		</ul>
 	</nav>
 	<section id="home">
@@ -45,30 +57,53 @@
 	<section id="registrati">
 		<h2>Registrati</h2>
 		<form action="/registrati" method="post">
-			<fieldset>
-				<legend>Informazioni necessarie</legend>
-				<label>
-					Username: <input type="text" name="username" required>
-				</label>
-				<label>
-					Password: <input type="password" name="password" required>
-				</label>
-				<label>
-					Confirm: <input type="password" name="confirmpassword" required>
-				</label>
-				<label>
-					Email: <input type="email" name="email" required>
-				</label>
-				<label>
-					Data di nascita: <input type="date" name="dataNascita" required>
-				</label>
-				<label>
-					Tipo utente: <select name="tipoutente" id="tipoutente">
-
-					</select>
-				</label>
-			</fieldset>
-			
+		
+				<div style="display: inline-block; width: 48%;">
+					<table style="width: 100%; text-align: right;">
+						<tr style="height: 50px;">
+							<td>Username:</td>
+						</tr>
+						<tr style="height: 50px;">
+							<td>Password:</td>
+						</tr>
+						<tr style="height: 50px;">
+							<td>Confirm:</td>
+						</tr>
+						<tr style="height: 50px;">
+							<td>Email:</td>
+						</tr>
+						<tr style="height: 50px;">
+							<td>Data di nascita:</td>
+						</tr>
+						<tr style="height: 50px;">
+							<td>Tipo utente:</td>
+						</tr>
+					</table>
+				</div><!-- 
+				 --><div style="display: inline-block; width: 48%;">
+					<table style="width: 100%; text-align: left;">
+						<tr style="height: 50px;">
+							<td><input type="text" name="username" required></td>
+						</tr>
+						<tr style="height: 50px;">
+							<td><input type="password" name="password" required></td>
+						</tr>
+						<tr style="height: 50px;">
+							<td><input type="password" name="confirmpassword" required></td>
+						</tr>
+						<tr style="height: 50px;">
+							<td><input type="email" name="email" required></td>
+						</tr>
+						<tr style="height: 50px;">
+							<td><input type="date" name="dataNascita" required></td>
+						</tr>
+						<tr style="height: 50px;">
+							<td><select name="tipoutente" id="tipoutente">
+							</select></td>
+						</tr>
+					</table>
+				</div>
+		
 		</form>
 	</section>
 	<footer>

@@ -38,7 +38,7 @@ function xhr_get(url) {
 		type : 'get',
 		dataType : 'json'
 	}).always(function() {
-		alert('always');
+//		alert('always');
 	}).fail(function() {
 		alert('fail');
 	});

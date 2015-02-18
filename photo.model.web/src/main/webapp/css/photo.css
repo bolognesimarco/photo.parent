@@ -1,6 +1,6 @@
 html {
 	height: 100%;
-	background-image: url("file:///C:/Sviluppo/Workspaces/photo/photo.parent/photo.model.web/src/main/webapp/imgs/COLOURlovers.com-Wall_Sconces.png");
+	background-image: url("../imgs/COLOURlovers.com-Wall_Sconces.png");
 }
 
 body {
@@ -50,7 +50,7 @@ nav ul li:hover {
 nav ul li a {
 	text-decoration: none;
 	color: white;
-	font-size: large;
+	font-size: medium;
 }
 
 
@@ -73,6 +73,15 @@ footer{
 	width: 100%;
 	text-align: center;
 }
+
+/* form[action="/registrati"] fieldset{
+	margin: 0 auto;
+	text-align: center;
+}
+
+form[action="/registrati"] label{
+	display: block;
+} */
 
 /* header{
 	height: 30px;
